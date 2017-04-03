@@ -1,0 +1,166 @@
+/* you can add any styles you think could improve user's experience */
+ /*
+ Styles must be written with a preprocessor.
+ Because of lack of time, I'm writting them in plain CSS but this
+ should be changed to SASS/LESS/Stylus and bundle a plugin on
+ webpack file.
+*/
+
+* {
+  transition: 165ms ease-in all;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: rgb(26, 26, 26);
+  border-top: 3px solid rgb(170, 213, 0);
+}
+
+header figure {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+header h1 {
+  color: #888;
+  display: inline-block;
+  font-size: 1.1rem;
+  margin: 8px 0 8px 130px;
+  padding: 0;
+}
+
+header figure img {
+  width: 110px;
+}
+
+.Cart {
+  border-bottom: 1px solid #eee;
+}
+
+.Cart-Button {
+  background: rgb(248, 248, 248);
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  height: 100%;
+  padding: 12px 25px 8px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.Cart-Button:hover {
+  cursor: pointer;
+  border-bottom: 3px solid rgb(170, 213, 0);
+}
+
+.Cart-Button img {
+  width: 32px;
+}
+
+.Cart-Indicator {
+  background: black;
+  border-radius: 50%;
+  color: white;
+  display: inline-block;
+  font-size: .8rem;
+  font-weight: 700;
+  height: 1.1rem;
+  line-height: .8rem;
+  padding-left: 7px;
+  padding-top: 2px;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  width: 1.1rem;
+}
+
+.Cart-Wrapper {
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 13px 10px 12px 130px;
+  position: relative;
+}
+.Cart-Wrapper strong {
+  font-weight: 700;
+  margin-right: 15px;
+}
+
+.Product {
+  border: 1px solid #f0f0f0;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.Product-Brand {
+  color: #888;
+  font-weight: 700;
+  margin: 40px 0 10px 0;
+  text-transform: uppercase;
+}
+
+.Product-Button {
+  background: black;
+  bottom: 0;
+  color: white;
+  height: 30px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.Product-Button input {
+  background: black;
+  appearance: none;
+  color: white;
+  font-weight: 700;
+  height: 100%;
+  outline: none;
+  width: 100%;
+}
+
+.Product-Button input:hover {
+  background: rgba(255,255,255,.2);
+  cursor: pointer;
+}
+
+.Product-Description,
+.Product-Transaction {
+  padding: 0 15px;
+}
+
+.Product-Name {
+  font-size: 1.15rem;
+  margin: 0 0 50px 0;
+  text-transform: uppercase;
+}
+
+.Product figure {
+  text-align: center;
+}
+
+.Product figure img:hover {
+  transform: scale(1.2);
+}
+
+.Product-Price {
+  color: #e4022d;
+  font-size: 1.2rem;
+}
+
+.Products h1 {
+  border-bottom: 1px dotted rgb(170, 213, 0);
+  color: rgb(170, 213, 0);
+  font-weight: 300;
+}
+
+.Products-List {
+  border: 1px solid #f0f0f0;
+}
