@@ -17,7 +17,10 @@ class ProductList extends Component {
     fetchProducts();
   }
   render() {
-    const items = this.props.products.catalog.map((item) => {
+    const list = (this.props.products) ?
+      this.props.products.catalog :
+      [];
+    const items = list.map((item) => {
       return (
         <Product
           key={item.id}

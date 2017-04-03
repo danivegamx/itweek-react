@@ -23,12 +23,6 @@ module.exports = {
             options: {
               presets: [['es2015', {modules: false}], 'react', 'stage-3']
             }
-          },
-          {
-            loader: 'postcss-loader',
-            options: {
-                sourceMap: 'inline',
-            }
           }
         ]
       }
