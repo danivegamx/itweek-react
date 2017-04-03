@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import constants from '../../../data/constants';
 import * as mock from '../../../data/mock.json';
+import { connect } from 'react-redux';
+import * as actions from '../../../data/productList/actions';
 import Product from './Product.jsx';
 
 class ProductList extends Component {
@@ -10,8 +12,12 @@ class ProductList extends Component {
       items: mock.catalog
     };
   }
+  componentDidMount() {
+    const { fetchProducts } = this.props;
+    fetchProducts();
+  }
   render() {
-    const items = mock.catalog.map((item) => {
+    const items = this.props.products.catalog.map((item) => {
       return (
         <Product
           key={item.id}
@@ -35,4 +41,12 @@ class ProductList extends Component {
   }
 }
 
-export default ProductList;
+const mapStateToProps = state => ({ ...state.productList });
+
+const mapDispatchToProps = dispatch => ({
+  fetchProducts: () => dispatch(
+    actions.fetchProducts()
+  )
+});
+
+export default connect(mapStateToProps,mapDispatchToProps)(ProductList);

@@ -33,7 +33,7 @@ header h1 {
   color: #888;
   display: inline-block;
   font-size: 1.1rem;
-  margin: 8px 0 8px 130px;
+  margin: 8px 0 8px 10px;
   padding: 0;
 }
 
@@ -85,7 +85,7 @@ header figure img {
 .Cart-Wrapper {
   font-size: 1.2rem;
   font-weight: 300;
-  padding: 13px 10px 12px 130px;
+  padding: 13px 10px 12px 10px;
   position: relative;
 }
 .Cart-Wrapper strong {
@@ -153,6 +153,10 @@ header figure img {
 .Product-Price {
   color: #e4022d;
   font-size: 1.2rem;
+}
+
+.Products {
+  padding: 0 10px;
 }
 
 .Products h1 {
